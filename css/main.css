@@ -244,7 +244,8 @@ footer .copyright {
   display: flex;
   justify-content: center;
   flex-flow: row wrap;
-  background: url("../img/bridge.jpg");
+  background: url("../img/bridge.jpg") center no-repeat #333;
+  background-size: cover;
   height: 500px;
 }
 
@@ -752,7 +753,7 @@ input[type=button] {
    .faq h4,
    .faq p {
      font-size: 1.125em;
-     line-height: 1; 
+     line-height: 1;
    }
 
 /* ==========================================================================
