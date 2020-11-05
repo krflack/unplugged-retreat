@@ -195,6 +195,7 @@ header nav {
   width: 60%;
   font-weight: 700;
   font-size: 1.125em;
+  margin: 0;
   text-transform: uppercase;
 }
 
@@ -202,6 +203,7 @@ header nav ul {
   display: flex;
   justify-content: space-around;
   width: 100%;
+  padding: 0;
 }
 
 header nav ul li {
@@ -213,6 +215,7 @@ header nav ul li {
 footer {
   text-align: center;
   flex-flow: column;
+  padding-bottom: 20px;
 }
 
 footer p {
@@ -232,6 +235,7 @@ footer .social-icons {
   display: flex;
   justify-content: space-around;
   align-items: center;
+  width: 200px;
 }
 
 footer .social-icons p {
@@ -246,10 +250,6 @@ footer .social-icons p {
 
 .social-icons i {
   font-size: 1.3125em;
-}
-
-footer .copyright {
-  margin: 20px, 0;
 }
 
 
@@ -275,16 +275,28 @@ footer .copyright {
 
 /* Aside */
 
+aside .content-wrapper {
+  margin: 30px 20px;
+}
+
 aside {
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
   flex-flow: row wrap;
   background-color: #527158;
 }
 
+aside h3 {
+  margin: 0;
+}
+
 aside .form {
   margin-top: 30px;
+}
+
+.form h3 {
+  padding-bottom: 20px;
 }
 
 input[type=text] {
@@ -372,6 +384,11 @@ input[type=button] {
   align-items: center;
   flex-flow: row wrap;
   background-color: #527158;
+  width: 100%;
+}
+
+.mission h2 {
+  margin: 0;
 }
 
 .map figure {
@@ -398,8 +415,19 @@ input[type=button] {
   background-color: #2a423a;
 }
 
+.contact h4 {
+  margin: 0 0 20px 0;
+}
+.contact-section h2 {
+  width: 100%;
+  margin: 13px 0;
+}
 .contact-content p {
   margin: 0;
+}
+
+.contact-content h4 {
+  margin-bottom: 18px;
 }
 
 /* ==================================================================
@@ -544,7 +572,7 @@ input[type=button] {
   /*Header*/
   header {
     justify-content: space-around;
-    padding: 33px 0;
+    padding: 33px 0 25px 0;
   }
 
   header .content-wrapper {
@@ -701,10 +729,12 @@ input[type=button] {
 
   .faq .content-wrapper {
     justify-content: space-between;
+    align-items: flex-start;
   }
 
   .faq-content {
     flex-basis: 45%;
+    align-items: center;
   }
 
   .faq h2 {
