@@ -305,7 +305,6 @@ input[type=button] {
   display: flex;
   justify-content: center;
   flex-flow: row wrap;
-  padding: 50px 0;
   background: url("../img/picnic.jpg") center no-repeat;
   background-size: cover;
 }
@@ -328,6 +327,12 @@ input[type=button] {
 .features p {
   margin: 0;
   text-align: center;
+}
+
+.features i {
+  font-size: 3.75em;
+  margin-bottom: 40px;
+
 }
 
 /* Reviews */
