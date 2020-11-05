@@ -238,11 +238,20 @@ footer .social-icons p {
   display: flex;
   justify-content: center;
   align-items: center;
+  background-color: #527158;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+}
+
+.social-icons i {
+  font-size: 1.3125em;
 }
 
 footer .copyright {
   margin: 20px, 0;
 }
+
 
 /*------------------Mobile Styles - Homepage-----------------------*/
 
