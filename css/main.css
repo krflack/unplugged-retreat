@@ -103,10 +103,11 @@ body {
 ul,
 ol {
   list-style-type: none;
+  margin: 0;
+  padding: 0;
 }
 
 a {
-  font-size: 1.125em;
   color: #e2e3ed;
   text-decoration: none;
 
@@ -114,8 +115,9 @@ a {
 
 h2 {
   font-family: 'Poppins', sans-serif;
-  font-size: 1.875em;
+  font-size: 1.125em;
   font-weight: 500;
+  margin: 0;
 }
 
 h3,
@@ -195,7 +197,6 @@ header nav {
   width: 60%;
   font-weight: 700;
   font-size: 1.125em;
-  margin: 0;
   text-transform: uppercase;
 }
 
@@ -203,7 +204,6 @@ header nav ul {
   display: flex;
   justify-content: space-around;
   width: 100%;
-  padding: 0;
 }
 
 header nav ul li {
@@ -215,7 +215,6 @@ header nav ul li {
 footer {
   text-align: center;
   flex-flow: column;
-  padding-bottom: 20px;
 }
 
 footer p {
@@ -248,8 +247,12 @@ footer .social-icons p {
   height: 40px;
 }
 
-.social-icons i {
+footer .social-icons p i {
   font-size: 1.3125em;
+}
+
+footer .copyright {
+  margin: 20px 0;
 }
 
 
@@ -282,7 +285,7 @@ aside .content-wrapper {
 aside {
   display: flex;
   justify-content: center;
-  align-items: flex-start;
+  align-items: center;
   flex-flow: row wrap;
   background-color: #527158;
 }
@@ -387,8 +390,9 @@ input[type=button] {
   width: 100%;
 }
 
-.mission h2 {
+.mission .content-wrapper h2 {
   margin: 0;
+  font-size: 1.875em;
 }
 
 .map figure {
@@ -415,19 +419,18 @@ input[type=button] {
   background-color: #2a423a;
 }
 
-.contact h4 {
-  margin: 0 0 20px 0;
-}
-.contact-section h2 {
-  width: 100%;
+.contact-section .content-wrapper h2 {
   margin: 13px 0;
+  font-size: 1em;
 }
+
 .contact-content p {
   margin: 0;
 }
 
-.contact-content h4 {
+.content-wrapper .contact-content h4 {
   margin-bottom: 18px;
+  font-size: 1.125em;
 }
 
 /* ==================================================================
@@ -685,6 +688,14 @@ input[type=button] {
     margin-bottom: 40px;
   }
 
+  footer p {
+    line-height: 1.285;
+  }
+
+  footer .social-icons {
+    width: 12.5em;
+    justify-content: space-between;
+  }
   footer .copyright {
     width: 100%;
     display: flex;
@@ -697,8 +708,13 @@ input[type=button] {
    .mission-content {
      display: flex;
      justify-content: space-between;
-     align-items: flex-start;
+     align-items: center;
      padding-top: 20px;
+   }
+
+   .mission .content-wrapper h2 {
+     margin: 0;
+     font-size: 2.25em;
    }
 
    .mission-content p {
@@ -734,7 +750,6 @@ input[type=button] {
 
   .faq-content {
     flex-basis: 45%;
-    align-items: center;
   }
 
   .faq h2 {
@@ -831,11 +846,11 @@ input[type=button] {
    .mission h2,
    .contact-section .content-wrapper h2 {
      width: 95%;
-     font-size: 3em;
+     font-size: 2.25em;
    }
 
    .map figure {
-     padding-bottom: 59%;
+     padding-bottom: 37.5%;
    }
 
    .contact-content h4 {
